@@ -1,11 +1,13 @@
 body {
-    font-family: Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
-    color: white;
-    background-color: navy;
+#judul{
+    color: bisque;
     text-align: center;
-    padding: 15px 20px;
-    border-radius: 8px;
+}
+
+.bio{
+    color: #444;
+    font-style: italic;
 }
