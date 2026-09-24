@@ -17,6 +17,7 @@ body {
     gap: 16px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .example-container {
@@ -33,4 +34,14 @@ body {
 
 .menu-item {
     flex: 1;
+}
+
+.menu-item {
+    width: 320px;
+}
+
+@media (max-width: 600px) {
+    .menu-item {
+        width: 100%;
+    }
 }
