@@ -13,9 +13,10 @@ body {
 }
 
 .kontainer-profil {
- display: flex;
- gap: 16px;
- align-items: center;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
 .example-container {
