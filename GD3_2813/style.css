@@ -12,6 +12,12 @@ body {
     font-style: italic;
 }
 
+.kontainer-profil {
+ display: flex;
+ gap: 16px;
+ align-items: center;
+}
+
 .example-container {
     margin: 5px 10px 15px 2px; 
     padding: 5px 10px 15px; 
@@ -23,6 +29,7 @@ body {
     display: flex;
     gap: 16px;
 }
+
 .menu-item {
     flex: 1;
 }
