@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="profil.html">Profil</a>
+    <a href="form.html">Form Pendaftaran</a>
+
+    <h1 id="judulHalaman">Halaman Interaktif Saya</h1>
+    <p id="teks">Teks ini bisa berubah</p>
+    <button onclick="ubahBiru()">Ubah ke biru</button>
+
+    <h2>Dialog Box</h2>
+    <label for="inputNama">Masukkan Nama Anda:</label><br>
+    <input type="text" id="inputNama" placeholder="Ketik nama di sini...">
+    <button onclick="tampilkanNama()">Tampilkan</button>
+
+    <h2>Kalkulator Kuadrat</h2>
+    <label for="inputAngka">Masukkan angka:</label>
+    <input type="number" id="inputAngka">
+    <button onclick="hitungKuadrat()">Hitung</button>
+    <p id="hasilKuadrat"></p>
+</body>
+<script>
+        const judul = document.getElementById("judulHalaman");
+        judul.style.color = "red";
+        console.log(judul.innerHTML);
+
+        function sapa(nama){
+            return "Halo, " + nama + "!";
+        }
+
+        console.log(sapa("Eman"));
+
+        function ubahBiru(){
+            const paragraf = document.getElementById("teks");
+            paragraf.style.color = "blue";
+        }
+
+        function tampilkanNama(){
+            const nama = document.getElementById("inputNama").value;
+
+            if(nama === ""){
+                alert("Silahkan isi nama dulu");
+            }else{
+                alert("Halo, " + nama + "!");
+            }
+        }
+    </script>
+</html>
