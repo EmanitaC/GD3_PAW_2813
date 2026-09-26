@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="profil.html">Kembali ke Profil</a>
+    <h1>Form Pendaftaran</h1>
+    <form action="" method="post">
+        <div>
+            <label for="inputNama">Nama Lengkap:</label><br>
+            <input type="text" id="inputNama" name="nama" placeholder="Nama Lengkap" required maxlength="50">
+        </div>
+        <br>
+
+        <div>
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="jkL" name="jenis_kelamin" value="Laki-laki" required>
+            <label for="jkL">Laki-laki</label>
+
+            <input type="radio" id="jkP" name="jenis_kelamin" value="Perempuan" required>
+            <label for="jkP">Perempuan</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="prodi">Program Studi:</label><br>
+            <select id="prodi" name="prodi" required>
+                <option value="">Pilih Program Studi</option>
+                <option value="Informatika">Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Teknik Industri">Teknik Industri</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="inputEmail">Email:</label><br>
+            <input type="email" id="inputEmail" name="email" placeholder="contoh@gmail.com" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="alasan">Alasan Mendaftar:</label><br>
+            <textarea name="alasan" id="alasan" rows="4" cols="50" placeholder="Tuliskan alasan anda..." required></textarea>
+        </div>
+        <br>
+
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
