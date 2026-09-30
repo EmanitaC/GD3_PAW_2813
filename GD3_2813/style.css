@@ -1,57 +1,11 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
+:root {
+    --primary-color: #261ce7;
+    --primary-hover: #4030f3;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #040507;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --radius: 10px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-
-#judul{
-    color: bisque;
-    text-align: center;
-}
-
-.bio{
-    color: #444;
-    font-style: italic;
-}
-
-.kontainer-profil {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
-
-.example-container {
-    margin: 5px 10px 15px 2px; 
-    padding: 5px 10px 15px; 
-    margin: 5px 10px; 
-    padding: 5px; 
-}
-
-.menu-grid {
-    display: flex;
-    gap: 16px;
-}
-
-.menu-item {
-    flex: 1;
-}
-
-.menu-item {
-    width: 320px;
-}
-
-table{
-        font-size: 20px;
-}
-
-@media (max-width: 600px) {
-    .kontainer-profil {
-        flex-direction: column;
-        align-items: center;
-    }
-    table{
-        font-size: 12px;
-    }
-}
-
